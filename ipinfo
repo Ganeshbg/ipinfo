@@ -1,0 +1,30 @@
+How to get the Location info of an IP address
+
+Go to ipinfo.io and signup to their free service. In free service, we can make 1000 requests per day. They also have paid service which lets us make more requests on daily basis.
+
+Once you signup, you will get a mail with a token. You need to use this token to make requests.
+
+For emample http://ipinfo.io/?token=your_token
+
+Then you can do curl from your command line
+
+curl http://ipinfo.io/?token=your_token : This will give your location details.
+
+If you want the location details of an IP
+
+curl http://ipinfo.io/8.8.8.8?token=your_token
+
+You can replace 8.8.8.8 with the IP that you want to search for. This will send us the data in json format and we can store the response for future use.
+
+A sample output:
+
+{
+  "ip": "23.216.82.62",
+  "hostname": "a23-216-82-62.deploy.static.akamaitechnologies.com",
+  "city": "Cambridge",
+  "region": "Massachusetts",
+  "country": "US",
+  "loc": "42.3626,-71.0843",
+  "org": "AS33652 Comcast Cable Communications, LLC",
+  "postal": "02142"
+}
