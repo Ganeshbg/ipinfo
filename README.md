@@ -1,6 +1,6 @@
 # ipinfo
 
-## How to get the Location info of an IP address
+## How to get the Location info of an IP address using ipinfo API
 
 Go to ipinfo.io and signup to their free service. In free service, we can make 1000 requests per day. They also have paid service which lets us make more requests on daily basis.
 
